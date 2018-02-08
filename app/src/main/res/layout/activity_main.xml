@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/linearLayout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#FF0"
+	android:orientation="vertical"
+	android:padding="10dp"
+	tools:context="ru.me.from_one_frgament_to_another.MainActivity">
+
+	<FrameLayout
+		android:id="@+id/containerFragmentA"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_margin="10dp"
+		android:layout_weight="1"/>
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="10dp"
+		android:layout_marginTop="10dp"
+		android:onClick="sendDataToFragmentB"
+		android:text="Отправить сумму в Fragment B"/>
+
+	<FrameLayout
+		android:id="@+id/containerFragmentB"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_margin="10dp"
+		android:layout_weight="1"/>
+
+</LinearLayout>
